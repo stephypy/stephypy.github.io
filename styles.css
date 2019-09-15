@@ -1,3 +1,4 @@
+  
 * {
   margin:0px;
   padding:0px;
@@ -9,11 +10,26 @@
   margin: 50px auto;
 }
 
-p {
+/* Text values only */
+.main {
   display: block;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+
+.column {
+	float: left;
+	width: 32%;
+	margin: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 /* The navigation bar */
@@ -27,6 +43,7 @@ p {
 
 /* Links inside the navbar */
 .navbar a {
+  font-family: "Courier New", Courier, monospace;
   float: left;
   display: block;
   color: #f2f2f2;
