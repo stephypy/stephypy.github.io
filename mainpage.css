@@ -1,0 +1,51 @@
+body {
+	background-color: #000000;
+}
+
+.container {
+	position: relative;
+}
+
+
+/* Dual Dividers */
+.leftColumn {
+	width: 48%;
+	float: left;
+}
+
+.rightColumn {
+	width: 48%;
+	float: right;
+}
+
+.name {
+	position: absolute;
+	top: 75%;
+	font: 72px "Verdana";
+	font-size: 72px;
+	font-weight: bolder;
+	/*font-size: 15vw;*/
+	color: #f7065e;
+}
+
+.words {
+	overflow: hidden;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: right;
+}	
+	
+.words a {
+	padding-left: 20px;
+	padding-right: 20px;
+	font: 32px "Verdana", monospace;
+	font-size: 32px;
+	/*font-size: 15vw;*/
+	color: #ffffff;
+}
+
+.words a:hover {
+	background: #f7065e;
+	color: #ffffff;
+}
