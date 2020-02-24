@@ -1,51 +1,75 @@
 body {
-	background-color: #000000;
+	background-color: #efefef;
 }
 
-.container {
-	position: relative;
+.navbar {
+	width: auto;
+	align-self = center;
+	border: 1px solid #efefef;
+	box-shadow: 1px 5px #b7b7b7;
+	padding: 30px;
+	margin: auto;
+	background: #efefef;
 }
 
-
-/* Dual Dividers */
-.leftColumn {
-	width: 48%;
-	float: left;
-}
-
-.rightColumn {
-	width: 48%;
-	float: right;
-}
-
-.name {
-	position: absolute;
-	top: 75%;
-	font: 72px "Verdana";
-	font-size: 72px;
-	font-weight: bolder;
-	/*font-size: 15vw;*/
-	color: #f7065e;
-}
-
-.words {
-	overflow: hidden;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	text-align: right;
-}	
-	
-.words a {
+.navbar a {
 	padding-left: 20px;
 	padding-right: 20px;
-	font: 32px "Verdana", monospace;
-	font-size: 32px;
-	/*font-size: 15vw;*/
-	color: #ffffff;
+	font: 20px "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: #000000;
+	
 }
 
-.words a:hover {
-	background: #f7065e;
-	color: #ffffff;
+.navbar a:hover {
+	
+	color: #efefef;
+}
+
+.banner {
+	font: 48px "Courier New", Courier, monospace;
+	font-size: 48px;
+	font-weight: light;
+	/*font-size: 15vw;*/
+	color: #434343;
+}
+
+.yellow_fill {
+	background: #f7ca06;
+	padding: 10px;
+	
+}
+	
+.circular_image {
+	width: 40%;
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+}
+
+.image_div {
+	text-align: center;
+	display: block;
+	
+}
+
+.text_box {
+	width: 500px;
+	align-self = center;
+	border: 1px solid #efefef;
+	box-shadow: 1px 5px #b7b7b7;
+	padding: 30px;
+	margin: auto;
+	background: #efefef;
+	font: 20px "Courier New", Courier, monospace;
+	font-size: 20px;
+	font-weight: light;
+}
+
+.title {
+	font: 72px Mono, "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	font-size: 72px;
+	color: #f7ca06;
 }
