@@ -1,11 +1,17 @@
 :root {
 	--yellow-background: #FFDB58;
 	--salmon-background: #FF4D4E;
+	--heading-font: "Arvo";
+	--body-font: "DM Sans";
 }
 
 body {
 	background: var(--yellow-background);
 	border-style: solid;
+}
+
+h1 {
+		font-family: var(--heading-font);
 }
 
 #contact {
@@ -46,6 +52,11 @@ body {
 body, .icon-container {
 	display: flex;
 	flex-direction: column;
+}
+
+body, .text-button {
+	font-family: var(--body-font);
+	font-size: 4vw;
 }
 
 #contact, .container, .img-container {
