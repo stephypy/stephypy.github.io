@@ -1,3 +1,39 @@
+:root {
+	--yellow-background: #FFDB58;
+	--salmon-background: #FF4D4E;
+}
+
+#hero-img {
+	max-width: 100%;
+}
+
 body {
-	background-color: #efefef;
+	background: var(--yellow-background);
+	border-style: solid;
+}
+
+.icon-container {
+	width: 100%;
+	position: relative;
+	align-items: center;
+	padding: 2em;
+}
+
+body, .icon-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact {
+	display: flex;
+	background: var(--salmon-background);
+}
+
+#contact, #bio, #topbar, #img-container {
+	border-style: solid;
+}
+
+.icons {
+	width: 3em;
+	height: 3em;
 }
