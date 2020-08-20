@@ -39,6 +39,10 @@ body {
 	font-weight: bold;
 }
 
+.text-button:hover {
+	font-size: 125%;
+}
+
 body, .icon-container {
 	display: flex;
 	flex-direction: column;
@@ -48,6 +52,6 @@ body, .icon-container {
 	border-style: solid;
 }
 
-.container, .icon-container {
+.container, .icon-container, .text-button {
 	padding: 1em;
 }
