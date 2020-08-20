@@ -33,6 +33,12 @@ body {
 	height: 3em;
 }
 
+.text-button {
+	border: none;
+	background: none;
+	font-weight: bold;
+}
+
 body, .icon-container {
 	display: flex;
 	flex-direction: column;
