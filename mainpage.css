@@ -1,3 +1,68 @@
+:root {
+	--yellow-background: #FFDB58;
+	--salmon-background: #FF4D4E;
+	--heading-font: "Arvo";
+	--body-font: "DM Sans";
+}
+
 body {
-	background-color: #efefef;
+	background: var(--yellow-background);
+	border-style: solid;
+}
+
+h1 {
+		font-family: var(--heading-font);
+}
+
+#contact {
+	display: flex;
+	background: var(--salmon-background);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.hero-img {
+	max-width: 100%;
+}
+
+.icon-container {
+	width: 100%;
+	position: relative;
+	align-items: center;
+}
+
+.icons {
+	width: 3em;
+	height: 3em;
+}
+
+.text-button {
+	border: none;
+	background: none;
+	font-weight: bold;
+}
+
+.text-button:hover {
+	font-size: 125%;
+}
+
+body, .icon-container {
+	display: flex;
+	flex-direction: column;
+}
+
+body, .text-button {
+	font-family: var(--body-font);
+	font-size: 4vw;
+}
+
+#contact, .container, .img-container {
+	border-style: solid;
+}
+
+.container, .icon-container, .text-button {
+	padding: 1em;
 }
