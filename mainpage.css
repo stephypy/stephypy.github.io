@@ -3,25 +3,9 @@
 	--salmon-background: #FF4D4E;
 }
 
-#hero-img {
-	max-width: 100%;
-}
-
 body {
 	background: var(--yellow-background);
 	border-style: solid;
-}
-
-.icon-container {
-	width: 100%;
-	position: relative;
-	align-items: center;
-	padding: 2em;
-}
-
-body, .icon-container {
-	display: flex;
-	flex-direction: column;
 }
 
 #contact {
@@ -29,11 +13,35 @@ body, .icon-container {
 	background: var(--salmon-background);
 }
 
-#contact, #bio, #topbar, #img-container {
-	border-style: solid;
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.hero-img {
+	max-width: 100%;
+}
+
+.icon-container {
+	width: 100%;
+	position: relative;
+	align-items: center;
 }
 
 .icons {
 	width: 3em;
 	height: 3em;
+}
+
+body, .icon-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact, .container, .img-container {
+	border-style: solid;
+}
+
+.container, .icon-container {
+	padding: 1em;
 }
