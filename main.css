@@ -19,11 +19,6 @@ h1 {
 	background: var(--salmon-background);
 }
 
-.center {
-	display: flex;
-	justify-content: center;
-}
-
 .hero-img {
 	max-width: 100%;
 }
@@ -37,6 +32,10 @@ h1 {
 .icons {
 	width: 3em;
 	height: 3em;
+}
+
+.menu-container {
+	background: var(--salmon-background);
 }
 
 .text-button {
@@ -59,10 +58,15 @@ body, .text-button {
 	font-size: 4vw;
 }
 
-#contact, .container, .img-container {
+#contact, .container, .img-container, .menu-container {
 	border-style: solid;
 }
 
-.container, .icon-container, .text-button {
+.center, .menu-container {
+	display: flex;
+	justify-content: center;
+}
+
+.container, .icon-container, .menu-container, .text-button {
 	padding: 1em;
 }
