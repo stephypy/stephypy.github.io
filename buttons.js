@@ -37,5 +37,5 @@ function goToPage(pageName) {
   console.log(window.location.href);
   console.log(pageName);
   console.log(window.location.href + "/" + pageName);
-  window.location.href = '/' + pageName + '.html';
+  window.location.href = "/" + pageName + ".html";
 }
