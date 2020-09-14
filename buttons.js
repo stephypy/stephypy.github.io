@@ -34,5 +34,5 @@ window.onload = function() {
 
 /* Go to the page indicated by the button */
 function goToPage(pageName) {
-  window.location.href = pageName + ".html";
+  window.location.href = "/" + pageName + ".html";
 }
