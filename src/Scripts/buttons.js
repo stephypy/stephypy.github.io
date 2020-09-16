@@ -28,7 +28,8 @@ window.onload = function() {
     extracurricular.addEventListener("click",  function(){goToPage(extracurricular.id)});
   }
   else {
-    // pass
+    const goback = document.getElementById("explore");
+    goback.addEventListener("click", function(){goToPage(goback.id)});
   }
 }
 
