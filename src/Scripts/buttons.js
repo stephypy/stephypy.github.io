@@ -28,14 +28,12 @@ window.onload = function() {
     extracurricular.addEventListener("click",  function(){goToPage(extracurricular.id)});
   }
   else {
-    // pass
+    const goback = document.getElementById("explore");
+    goback.addEventListener("click", function(){goToPage(goback.id)});
   }
 }
 
 /* Go to the page indicated by the button */
 function goToPage(pageName) {
-  console.log(window.location.href);
-  console.log(pageName);
-  console.log(window.location.href + "/" + pageName);
-  window.location.href = "/" + pageName + ".html";
+  window.location.replace(pageName + ".html");
 }
