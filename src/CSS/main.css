@@ -1,72 +1,29 @@
 :root {
 	--yellow-background: #FFDB58;
 	--salmon-background: #FF4D4E;
+	--cream-background: #fbe7c6;
 	--heading-font: "Arvo";
 	--body-font: "DM Sans";
 }
 
 body {
-	background: var(--yellow-background);
-	border-style: solid;
+	background: var(--cream-background);
 }
 
 h1 {
 		font-family: var(--heading-font);
 }
 
-#contact {
-	display: flex;
-	background: var(--salmon-background);
-}
-
-.hero-img {
-	max-width: 100%;
-}
-
-.icon-container {
-	width: 100%;
-	position: relative;
-	align-items: center;
-}
-
-.icons {
-	width: 3em;
-	height: 3em;
-}
-
-.menu-container {
-	background: var(--salmon-background);
-}
-
-.text-button {
-	border: none;
-	background: none;
-	font-weight: bold;
-}
-
-.text-button:hover {
-	font-size: 125%;
-}
-
-body, .icon-container {
+.header-div {
+	max-height: 25%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+
 }
 
-body, .text-button {
-	font-family: var(--body-font);
-	font-size: 4vw;
-}
 
-#contact, .container, .img-container, .menu-container {
-	border-style: solid;
-}
-
-.center, .menu-container {
-	display: flex;
-	justify-content: center;
-}
-
-.container, .icon-container, .menu-container, .text-button {
-	padding: 1em;
+.logo {
+	max-width: 25%;
+	max-height: 25%;
 }
