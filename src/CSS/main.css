@@ -1,72 +1,148 @@
 :root {
-	--yellow-background: #FFDB58;
-	--salmon-background: #FF4D4E;
+	--brown-background: #4a4232;
+	--cream-background: #fbe7c6;
+	--yellow-background: #d3b33e;
 	--heading-font: "Arvo";
 	--body-font: "DM Sans";
 }
 
 body {
-	background: var(--yellow-background);
-	border-style: solid;
+	background: var(--cream-background);
+	font-family: var(--body-font);
+	color: var(--brown-background);
+	font-size: 1em;
 }
 
-h1 {
-		font-family: var(--heading-font);
-}
-
-#contact {
+.options {
 	display: flex;
-	background: var(--salmon-background);
-}
-
-.hero-img {
+	flex-direction: column;
 	max-width: 100%;
+	margin: 1em;
 }
 
-.icon-container {
-	width: 100%;
+.options button:nth-child(1) {
+	background-color: var(--yellow-background);
+}
+
+.options button:nth-child(2) {
+	background-color: var(--brown-background);
+}
+
+button {
+	box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	color: var(--cream-background);
+	margin: 0.5em;
+	min-height: 4.5em;
+	font-family: var(--body-font);
+	font-size: 1em;
+	text-align: right;
+	border-style: none;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	border-radius: 0.25em;
+}
+
+button:active {
+	box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	transform: translateY(6px);
+}
+
+.logo {
+	max-width: 25%;
+	max-height: 25%;
+}
+
+.lined-box {
+	border-style: dashed;
+	border-color: var(--brown-background);
+	margin: 2em;
+	padding: 3em;
+}
+
+h1 span {
 	position: relative;
+ 	top: 20px;
+	animation-duration: 0.5s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes wave {
+	100% {
+    top: -10px;
+	}
+}
+
+.header-div {
+	background-color: var(--brown-background);
+	color: var(--cream-background);
+	font-family: var(--heading-font);
+	margin: 1em;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
-.icons {
-	width: 3em;
-	height: 3em;
+/** Phone devices/Portrait mode **/
+@media only screen and (max-width: 768px) {
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-div {
+		max-height: 25%;
+	}
 }
 
-.menu-container {
-	background: var(--salmon-background);
-}
+/** Tablets, laptops, desktop, landscape **/
+@media only screen and (min-width: 769px) {
+	.flex-container {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
 
-.text-button {
-	border: none;
-	background: none;
-	font-weight: bold;
-}
+	#header-component,
+	#body-component {
+		max-width: 50%;
+	}
 
-.text-button:hover {
-	font-size: 125%;
-}
+	.header-div {
+		max-height: 100%;
+	}
 
-body, .icon-container {
-	display: flex;
-	flex-direction: column;
-}
+	.tab {
+		display: none;
+	}
 
-body, .text-button {
-	font-family: var(--body-font);
-	font-size: 4vw;
-}
+	br {
+		display: none;
+	}
 
-#contact, .container, .img-container, .menu-container {
-	border-style: solid;
-}
+	h1 {
+		white-space: nowrap;
+	}
 
-.center, .menu-container {
-	display: flex;
-	justify-content: center;
-}
-
-.container, .icon-container, .menu-container, .text-button {
-	padding: 1em;
+	/**TODO: Find out whether it's possible to do this dynamically/or on JS**/
+	h1 span:nth-child(2) { animation-delay: .1s; }
+	h1 span:nth-child(3) { animation-delay: .2s; }
+	h1 span:nth-child(4) { animation-delay: .3s; }
+	h1 span:nth-child(5) { animation-delay: .4s; }
+	h1 span:nth-child(6) { animation-delay: .5s; }
+	h1 span:nth-child(7) { animation-delay: .6s; }
+	h1 span:nth-child(8) { animation-delay: .7s; }
+	h1 span:nth-child(9) { animation-delay: .8s; }
+	h1 span:nth-child(10) { animation-delay: .9s; }
+	h1 span:nth-child(11) { animation-delay: 1.0s; }
+	h1 span:nth-child(12) { animation-delay: 1.1s; }
+	h1 span:nth-child(13) { animation-delay: 1.2s; }
+	h1 span:nth-child(14) { animation-delay: 1.3s; }
+	h1 span:nth-child(15) { animation-delay: 1.4s; }
+	h1 span:nth-child(16) { animation-delay: 1.5s; }
+	h1 span:nth-child(17) { animation-delay: 1.6s; }
+	h1 span:nth-child(18) { animation-delay: 1.7s; }
 }
