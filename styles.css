@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+:root {
+  --black
+: rgba(0, 0, 0, 1);
+  --mist-gray
+: rgba(196, 196, 196, 1);
+  --gallery
+: rgba(240, 239, 235, 1);
+  --rose-bud
+: rgba(255, 180, 162, 1);
+
+  --font-size-m
+: 48px;
+
+  --font-family-nunito
+: "Nunito";
+
+background-color: var(--rose-bud);
+}
+
+html,body{
+  height: 90%;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.console {
+  background-color: var(--gallery);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px #00000040;
+  margin: auto;
+  padding: 42px 72px;
+  width: 500px;
+  height: 100%;
+
+}
+
+ .game-screen {
+  border-style: solid;
+  background-color:#b5838d;
+  border-radius: 30px;
+  border-width: 30px;
+  border-color:  #6d6875;
+  height: 75%;
+  margin: inherit;
+  position: relative;
+}
+
+.game-flexbox {
+  display: flex;
+  grid-gap: 50px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.all-rect {
+  align-self: center;
+  margin: auto;
+}
+
+.row-rect {
+  display: flex;
+  justify-content: space-around;
+}
+
+ .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 434px;
+  width: 200px;
+}
+
+ .rect-1, .rect-2, .rect-3, .rect-4 {
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+}
+
+.rect-1 {
+ background-color: #AA9584;
+ }
+
+.rect-2 {
+ background-color: #C97078;
+ }
+
+ .rect-3 {
+  background-color: #C9977A;
+  }
+
+ .rect-4 {
+  background-color: #8A8193;
+  }
+
+ .score {
+  color: var(--gallery);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  margin: 10px;
+}
+
+.gameover {
+  color: var(--gallery);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  align-self: center;
+}
+
+.start-button-flexbox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ .start-button {
+  background-color: var(--rose-bud);
+  border-radius: 30px;
+  height: auto;
+  margin-top: 20px;
+  min-width: 200px;
+  padding: 10px 100px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ .start-text {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  letter-spacing: 0;
+  min-height: 65px;
+  min-width: 113px;
+}
