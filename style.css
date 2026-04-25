@@ -21,14 +21,14 @@ body {
   background-size: cover;
 }
 
-article {
+.poem {
   margin-bottom:10px;
 }
 
-article:nth-of-type(odd) {
+poem:nth-of-type(odd) {
   background: #BCADE0;
 }
 
-article:nth-of-type(even) {
+poem:nth-of-type(even) {
   background: #B9D498;
 } 
