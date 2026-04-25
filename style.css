@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Notable&family=Patrick+Hand&display=swap');
 
-
 .purple-title {
   font-family: "Bitcount Prop Double Ink";
+  text-color: black;
 }
 
-h4 {
+.h4 {
   font-family: "Notable";
 }
 
 p {
   font-family: "Patrick Hand";
+  font-size: 2em;
 }
 
 body {
@@ -19,3 +20,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+article {
+  margin-bottom:10px;
+}
+
+article:nth-of-type(odd) {
+  background: #BCADE0;
+}
+
+article:nth-of-type(even) {
+  background: #B9D498;
+} 
