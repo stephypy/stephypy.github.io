@@ -1,5 +1,5 @@
 body {
-  background-image: url('./assets/lavander_portrait.jpg');
+  background-image: url('assets/lavander_portrait.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
