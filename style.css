@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Notable&family=Patrick+Hand&display=swap');
+
 
 .purple-title {
   font-family: "Bitcount Prop Double Ink";
+}
+
+h4 {
+  font-family: "Notable";
+}
+
+p {
+  font-family: "Patrick Hand";
 }
 
 body {
