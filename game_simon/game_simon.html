@@ -11,12 +11,14 @@
   <script src="prototype.js"></script>
 </head>
 <body>
-  <div class="container-fluid console">
-    <div class="container-fluid game-screen">
-      <div class="container-fluid game-flexbox">
-        <div id="score" class="score">Score:</div>
-        <div id="all-rect" class="all-rect">
-          <div class="row-rect">
+  <div id="test-console" class="container-fluid">
+    <div id="test-screen" class="container-fluid">
+      <div id="test-score" class="container-fluid text-center">
+        <h3 id="score" class="score">Score:</h3>
+      </div>
+      
+      <div id="all-rect">
+        <div class="row-rect">
             <button id="1" class="rect-1"></button>
             <button id="2" class="rect-2"></button>
           </div>
@@ -24,15 +26,15 @@
             <button id="3" class="rect-3"></button>
             <button id="4" class="rect-4"></button>
           </div>
-        </div>
+      </div>
 
-        <div id="gameover" class="gameover">Game Over</div>
+      <div id="test-lose">
+        <h3 id="gameover" class="gameover">Game Over</h3>
       </div>
     </div>
-
-    <div class="start-button-flexbox">
+    <div id="test-start">
       <button id="start" class="start-button">Start</button>
-    </div>
+    </div>    
   </div>
 </body>
 </html>
