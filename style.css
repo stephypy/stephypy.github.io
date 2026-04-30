@@ -1,17 +1,42 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Lexend:wght@100..900&family=Patrick+Hand&display=swap');
 
+/* Fonts for card component */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Vampiro+One&display=swap');
+
+/**** Styling for card component ****/
+.card {
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+  display: grid;
+  gap: 20px;
+}
+
+.card-header h3 {
+    font-family: "Vampiro One";
+}
+
+.card-header h4, h5 {
+    font-family: "Belanosima";
+}
+
+.card-body {
+  padding: 24px 28px;
+}
+
+.card-body p {
+    font-family: "Nunito Sans";
+    font-size: 1.6em;
+}
+
+/* General */
 .purple-title {
   font-family: "Bitcount Prop Double Ink";
-  text-color: black;
+  color: black;
 }
 
 .subtitle {
   font-family: "Lexend";
-}
-
-p {
-  font-family: "Patrick Hand";
-  font-size: 1.5em;
 }
 
 body {
@@ -20,15 +45,3 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
-.poem {
-  margin-bottom:10px;
-}
-
-poem:nth-of-type(odd) {
-  background: #BCADE0;
-}
-
-poem:nth-of-type(even) {
-  background: #B9D498;
-} 

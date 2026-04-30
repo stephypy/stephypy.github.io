@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Vampiro+One&display=swap');
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+  display: grid;
+  gap: 0;
+  max-width: 50%;
+}
+
+.card-header h3 {
+    font-family: "Vampiro One";
+    padding: 15 0 0 15;
+    margin: 15 0 0 15;
+    text-align: left;
+}
+
+.card-header h4, h5 {
+    font-family: "Belanosima";
+    display: grid;
+    text-align: left;
+    padding: 5 5 5 15;
+    margin: 5 5 5 15;
+}
+
+.card-body {
+  padding: 24px 28px;
+}
+
+.card-body p {
+    font-family: "Nunito Sans";
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5em;
+}
